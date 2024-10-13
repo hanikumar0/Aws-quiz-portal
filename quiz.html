@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWS Quiz Application - Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <h1>AWS Quiz</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signup.html">Signup</a></li>
+                <li><a href="quiz.html">Take Quiz</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <header>
+            <h2>AWS Quiz</h2>
+            <p>Test your knowledge with this time-based quiz! You have 30 seconds for each question.</p>
+        </header>
+
+        <div id="time" class="timer">
+            Time left: <span id="time-display">30</span> seconds
+        </div>
+
+        <div id="question-container" class="question-container"></div>
+        <div id="answer-buttons" class="answer-buttons"></div>
+        <button id="next-button" class="btn" style="display: none;">Next Question</button>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 AWS Quiz Application. All rights reserved.</p>
+            <p>Designed by Muskan</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

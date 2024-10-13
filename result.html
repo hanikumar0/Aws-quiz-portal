@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWS Quiz Application - Result</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <h1>AWS Quiz</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signup.html">Signup</a></li>
+                <li><a href="quiz.html">Take Quiz</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <header>
+            <h2>Your Quiz Results</h2>
+            <p>Here are your scores from the AWS quiz!</p>
+        </header>
+
+        <div id="score-container">
+            <h3>Your Score: <span id="final-score"></span></h3>
+            <button class="btn" onclick="location.href='quiz.html'">Try Again</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 AWS Quiz Application. All rights reserved.</p>
+            <p>Designed by Muskan</p>
+        </div>
+    </footer>
+
+    <script>
+        // Retrieve and display the score from local storage
+        document.getElementById('final-score').innerText = localStorage.getItem('quizScore') || 0;
+    </script>
+</body>
+</html>
